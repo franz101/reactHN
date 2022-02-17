@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "https://franz101.github.io/reactHN/build/static/css/main.5ebd29a5.chunk.css",
+    "main.js": "https://franz101.github.io/reactHN/build/static/js/main.fc1217b5.chunk.js",
+    "main.js.map": "https://franz101.github.io/reactHN/build/static/js/main.fc1217b5.chunk.js.map",
+    "runtime-main.js": "https://franz101.github.io/reactHN/build/static/js/runtime-main.2c3bbe8d.js",
+    "runtime-main.js.map": "https://franz101.github.io/reactHN/build/static/js/runtime-main.2c3bbe8d.js.map",
+    "static/js/2.62510682.chunk.js": "https://franz101.github.io/reactHN/build/static/js/2.62510682.chunk.js",
+    "static/js/2.62510682.chunk.js.map": "https://franz101.github.io/reactHN/build/static/js/2.62510682.chunk.js.map",
+    "index.html": "https://franz101.github.io/reactHN/build/index.html",
+    "precache-manifest.4a84fded7c4b99c54760bbf756839daf.js": "https://franz101.github.io/reactHN/build/precache-manifest.4a84fded7c4b99c54760bbf756839daf.js",
+    "service-worker.js": "https://franz101.github.io/reactHN/build/service-worker.js",
+    "static/css/main.5ebd29a5.chunk.css.map": "https://franz101.github.io/reactHN/build/static/css/main.5ebd29a5.chunk.css.map",
+    "static/js/2.62510682.chunk.js.LICENSE.txt": "https://franz101.github.io/reactHN/build/static/js/2.62510682.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2c3bbe8d.js",
+    "static/js/2.62510682.chunk.js",
+    "static/css/main.5ebd29a5.chunk.css",
+    "static/js/main.fc1217b5.chunk.js"
+  ]
+}
