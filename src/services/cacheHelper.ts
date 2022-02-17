@@ -83,3 +83,31 @@ export const getCategoryForIdCached = async (id: number) => {
     //JSON.stringify(listProbalitiesForPrediction(prediction))
   );
 };
+
+export const getCategoryIdForIdCached = async (id: number) => {
+  const index = calculateIndex(id);
+  const csvData = await new Promise<any>((resolve, reject) => {
+    // post request using fetch
+    fetch(
+      `https://franz101.github.io/hn_topic_data/predictions/export/${index}.csv`,
+      {
+        method: "GET",
+        mode: "cors",
+        credentials: "omit",
+      }
+    )
+      .then((res) => res.text())
+      .then((data: any) => {
+        resolve(data);
+      })
+      .catch((err) => {
+        reject(err);
+      });
+  });
+
+  const predictions = getCategoryPrediction(index, csvData);
+  const prediction = predictions[id];
+  const predictionMax = Math.max(...prediction);
+  const predictionCat = prediction.indexOf(predictionMax + "");
+  return predictionCat;
+};
