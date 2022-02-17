@@ -3,7 +3,6 @@
   "version": "2.0.0-development",
   "homepage": "https://franz101.github.io/reactHN/build",
   "private": true,
-  "homepage": "https://franz101.github.io/reactHN/build/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.3.2",
     "@types/dompurify": "^2.0.1",
