@@ -27,7 +27,7 @@
   },
   "scripts": {
     "prestart": "yarn run build:styles",
-    "start": "BROWSER=none react-scripts start",
+    "start": "PUBLIC_URL=http://localhost:3000 BROWSER=none react-scripts start",
     "now-start": "serve -s ./build",
     "prebuild": "NODE_ENV=production yarn run build:styles",
     "build": "PUBLIC_URL=https://franz101.github.io/reactHN/build/ react-scripts build",

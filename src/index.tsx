@@ -25,11 +25,7 @@ const root: JSX.Element = (
         <main>
           <div className="max-w-screen-lg my-4 mx-auto">
             <Switch>
-              <Route
-                exact
-                path={`${process.env.PUBLIC_URL}/`}
-                component={DefaultFeature}
-              />
+              <Route exact path={`/`} component={DefaultFeature} />
               <Route
                 path={`${process.env.PUBLIC_URL}/item/:id`}
                 component={ItemFeature}
@@ -39,7 +35,7 @@ const root: JSX.Element = (
                 component={UserFeature}
               />
               <Route
-                path={`${process.env.PUBLIC_URL}/news/:page?`}
+                path={`/news/:page?`}
                 render={(props) => <CollectionFeature {...props} type="news" />}
               />
               <Route
