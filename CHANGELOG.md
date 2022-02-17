@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/franz101/reactHN/compare/v1.1.0...v1.2.0) (2022-02-17)
+
+
+### Features
+
+* pOC: added business page ([5c6956b](https://github.com/franz101/reactHN/commit/5c6956bbb357302ea2ee76ae444990233080f182))
+
 # [1.1.0](https://github.com/ptibbetts/reactHN/compare/v1.0.0...v1.1.0) (2020-08-13)
 
 
