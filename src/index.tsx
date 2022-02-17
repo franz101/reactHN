@@ -19,38 +19,52 @@ import NoMatch from "./components/NoMatch";
 
 const root: JSX.Element = (
   <Provider store={store}>
-    <Router basename="/reactHN/build/">
+    <Router basename="/reactHN/build">
       <div>
         <Navigation />
         <main>
           <div className="max-w-screen-lg my-4 mx-auto">
             <Switch>
-              <Route exact path="/" component={DefaultFeature} />
-              <Route path="/item/:id" component={ItemFeature} />
-              <Route path="/user/:id" component={UserFeature} />
               <Route
-                path="/news/:page?"
+                exact
+                path={`${process.env.PUBLIC_URL}/`}
+                component={DefaultFeature}
+              />
+              <Route
+                path={`${process.env.PUBLIC_URL}/item/:id`}
+                component={ItemFeature}
+              />
+              <Route
+                path={`${process.env.PUBLIC_URL}/user/:id`}
+                component={UserFeature}
+              />
+              <Route
+                path={`${process.env.PUBLIC_URL}/news/:page?`}
                 render={(props) => <CollectionFeature {...props} type="news" />}
               />
               <Route
-                path="/newest/:page?"
+                path={`${process.env.PUBLIC_URL}/newest/:page?`}
                 render={(props) => (
                   <CollectionFeature {...props} type="newest" />
                 )}
               />
               <Route
-                path="/show/:page?"
+                path={`${process.env.PUBLIC_URL}/show/:page?`}
                 render={(props) => <CollectionFeature {...props} type="show" />}
               />
               <Route
-                path="/ask/:page?"
+                path={`${process.env.PUBLIC_URL}/ask/:page?`}
                 render={(props) => <CollectionFeature {...props} type="ask" />}
               />
               <Route
-                path="/jobs/:page?"
+                path={`${process.env.PUBLIC_URL}/jobs/:page?`}
                 render={(props) => <CollectionFeature {...props} type="jobs" />}
               />
-              <Route exact path="/about" component={About} />
+              <Route
+                exact
+                path={`${process.env.PUBLIC_URL}/about`}
+                component={About}
+              />
               <Route component={NoMatch} />
             </Switch>
           </div>
