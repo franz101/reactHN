@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/reactHN/build/static/css/main.5ebd29a5.chunk.css",
+    "main.js": "/reactHN/build/static/js/main.9f502be6.chunk.js",
+    "main.js.map": "/reactHN/build/static/js/main.9f502be6.chunk.js.map",
+    "runtime-main.js": "/reactHN/build/static/js/runtime-main.166454a6.js",
+    "runtime-main.js.map": "/reactHN/build/static/js/runtime-main.166454a6.js.map",
+    "static/js/2.62510682.chunk.js": "/reactHN/build/static/js/2.62510682.chunk.js",
+    "static/js/2.62510682.chunk.js.map": "/reactHN/build/static/js/2.62510682.chunk.js.map",
+    "index.html": "/reactHN/build/index.html",
+    "precache-manifest.d3619366bef5beff6b15cc16a0628ca7.js": "/reactHN/build/precache-manifest.d3619366bef5beff6b15cc16a0628ca7.js",
+    "service-worker.js": "/reactHN/build/service-worker.js",
+    "static/css/main.5ebd29a5.chunk.css.map": "/reactHN/build/static/css/main.5ebd29a5.chunk.css.map",
+    "static/js/2.62510682.chunk.js.LICENSE.txt": "/reactHN/build/static/js/2.62510682.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.166454a6.js",
+    "static/js/2.62510682.chunk.js",
+    "static/css/main.5ebd29a5.chunk.css",
+    "static/js/main.9f502be6.chunk.js"
+  ]
+}
