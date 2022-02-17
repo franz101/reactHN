@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2234c42ea6df50e411f3bf7cd1080c27",
+    "revision": "d15de7bdd2b74ad4d1860c4c35783707",
     "url": "https://franz101.github.io/reactHN/index.html"
   },
   {
-    "revision": "1bae524bfd451953ba44",
+    "revision": "5ce014d7c2bfed8d8cf9",
     "url": "https://franz101.github.io/reactHN/static/css/main.5ebd29a5.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://franz101.github.io/reactHN/static/js/2.54ea59d2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1bae524bfd451953ba44",
-    "url": "https://franz101.github.io/reactHN/static/js/main.d7779b02.chunk.js"
+    "revision": "5ce014d7c2bfed8d8cf9",
+    "url": "https://franz101.github.io/reactHN/static/js/main.4d68d883.chunk.js"
   },
   {
     "revision": "fa32e4fbdcd03b92ec76",

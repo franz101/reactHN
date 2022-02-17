@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "https://franz101.github.io/reactHN/static/css/main.5ebd29a5.chunk.css",
-    "main.js": "https://franz101.github.io/reactHN/static/js/main.d7779b02.chunk.js",
-    "main.js.map": "https://franz101.github.io/reactHN/static/js/main.d7779b02.chunk.js.map",
+    "main.js": "https://franz101.github.io/reactHN/static/js/main.4d68d883.chunk.js",
+    "main.js.map": "https://franz101.github.io/reactHN/static/js/main.4d68d883.chunk.js.map",
     "runtime-main.js": "https://franz101.github.io/reactHN/static/js/runtime-main.c3eefa58.js",
     "runtime-main.js.map": "https://franz101.github.io/reactHN/static/js/runtime-main.c3eefa58.js.map",
     "static/js/2.54ea59d2.chunk.js": "https://franz101.github.io/reactHN/static/js/2.54ea59d2.chunk.js",
     "static/js/2.54ea59d2.chunk.js.map": "https://franz101.github.io/reactHN/static/js/2.54ea59d2.chunk.js.map",
     "index.html": "https://franz101.github.io/reactHN/index.html",
-    "precache-manifest.bba2d699d184eb692a2d4a684343363b.js": "https://franz101.github.io/reactHN/precache-manifest.bba2d699d184eb692a2d4a684343363b.js",
+    "precache-manifest.04961b35cfe797d01121a96ac7a3ff57.js": "https://franz101.github.io/reactHN/precache-manifest.04961b35cfe797d01121a96ac7a3ff57.js",
     "service-worker.js": "https://franz101.github.io/reactHN/service-worker.js",
     "static/css/main.5ebd29a5.chunk.css.map": "https://franz101.github.io/reactHN/static/css/main.5ebd29a5.chunk.css.map",
     "static/js/2.54ea59d2.chunk.js.LICENSE.txt": "https://franz101.github.io/reactHN/static/js/2.54ea59d2.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c3eefa58.js",
     "static/js/2.54ea59d2.chunk.js",
     "static/css/main.5ebd29a5.chunk.css",
-    "static/js/main.d7779b02.chunk.js"
+    "static/js/main.4d68d883.chunk.js"
   ]
 }
