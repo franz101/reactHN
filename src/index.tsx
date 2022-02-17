@@ -61,6 +61,12 @@ const root: JSX.Element = (
                 render={(props) => <CollectionFeature {...props} type="jobs" />}
               />
               <Route
+                path={`${process.env.PUBLIC_URL}/business/:page?`}
+                render={(props) => (
+                  <CollectionFeature {...props} type="business" />
+                )}
+              />
+              <Route
                 exact
                 path={`${process.env.PUBLIC_URL}/about`}
                 component={About}

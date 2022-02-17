@@ -1,5 +1,8 @@
 import { CollectionType } from "../features/collection/collectionSlice";
-import { getCategoryForIdCached } from "./cacheHelper";
+import {
+  getCategoryForIdCached,
+  getCategoryIdForIdCached,
+} from "./cacheHelper";
 
 const API_URL = "https://node-hnapi.herokuapp.com/";
 
@@ -84,6 +87,44 @@ export const api = {
         });
     });
   },
+  getCollectionByCategory: async (type: CollectionType, page: string) => {
+    if (type !== "business") {
+      return [] as Item[];
+    }
+
+    let currentPage = parseInt(page);
+
+    const fetchPage = (page: number) =>
+      new Promise<Collection>((resolve, reject) => {
+        fetch(`${API_URL}news?page=${page}`)
+          .then((res) => res.json())
+          .then((data: Item[]) => {
+            resolve(data);
+          })
+          .catch((err) => {
+            reject(err);
+          });
+      });
+
+    const businessItems: Collection = [];
+    while (businessItems.length < 10) {
+      const items = await fetchPage(currentPage);
+      for await (const item of items) {
+        try {
+          const cat = await getCategoryIdForIdCached(item.id);
+          if (cat === 2) {
+            businessItems.push(item);
+          } else {
+          }
+        } catch (error) {
+          console.log(item.id, "not found");
+        }
+      }
+      currentPage++;
+    }
+    return businessItems;
+  },
+
   getCategoryForIdCached,
 
   getCategory: (text: string) => {
