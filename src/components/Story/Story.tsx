@@ -30,8 +30,14 @@ export const Story = (props: Props): JSX.Element => {
 
   useEffect(() => {
     const getCat = async () => {
-      const cat = await api.getCategory(data.title);
-      setCategory(cat);
+      try {
+        const cat = await api.getCategoryForIdCached(data.id);
+        //      const cat = await api.getCategory(data.title);
+
+        setCategory(cat);
+      } catch (error) {
+        setCategory("failed");
+      }
     };
     try {
       getCat();

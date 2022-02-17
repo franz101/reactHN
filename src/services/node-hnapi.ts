@@ -1,4 +1,5 @@
 import { CollectionType } from "../features/collection/collectionSlice";
+import { getCategoryForIdCached } from "./cacheHelper";
 
 const API_URL = "https://node-hnapi.herokuapp.com/";
 
@@ -83,6 +84,7 @@ export const api = {
         });
     });
   },
+  getCategoryForIdCached,
 
   getCategory: (text: string) => {
     return new Promise<any>((resolve, reject) => {
