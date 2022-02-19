@@ -1,3 +1,19 @@
+# [1.3.0](https://github.com/franz101/reactHN/compare/v1.2.0...v1.3.0) (2022-02-19)
+
+
+### Bug Fixes
+
+* fix deployment ([5e67a51](https://github.com/franz101/reactHN/commit/5e67a51c1376b83fd53196709d7383a327e96e52))
+* fix duplicate merge ([a913a03](https://github.com/franz101/reactHN/commit/a913a039e02f46cce850279db09d57e008f8af02))
+* fix PUBLIC URL ([c9ae054](https://github.com/franz101/reactHN/commit/c9ae054305b0e113b708fe0f6891bd38caa881d4))
+* merge gh pages ([54552f4](https://github.com/franz101/reactHN/commit/54552f4c8bc6ede14945eb8da91e1d9c5871b8ca))
+
+
+### Features
+
+* added new api plus comment ([e3354fe](https://github.com/franz101/reactHN/commit/e3354fe96c2ac506fadea8a7c8ad722528c8482e))
+* removed business section ([b0fc51e](https://github.com/franz101/reactHN/commit/b0fc51eca1a1697bc8cd101a15d9e3c49342efe4))
+
 # [1.2.0](https://github.com/franz101/reactHN/compare/v1.1.0...v1.2.0) (2022-02-17)
 
 
