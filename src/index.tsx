@@ -19,44 +19,44 @@ import NoMatch from "./components/NoMatch";
 
 const root: JSX.Element = (
   <Provider store={store}>
-    <Router>
+    <Router basename="/reactHN/">
       <div>
         <Navigation />
         <main>
           <div className="max-w-screen-lg my-4 mx-auto">
             <Switch>
-              <Route exact path="/" component={DefaultFeature} />
-              <Route path="/item/:id" component={ItemFeature} />
-              <Route path="/user/:id" component={UserFeature} />
+              <Route exact path={`/`} component={DefaultFeature} />
+              <Route path={`${""}/item/:id`} component={ItemFeature} />
+              <Route path={`${""}/user/:id`} component={UserFeature} />
               <Route
-                path="/news/:page?"
+                path={`/news/:page?`}
                 render={(props) => <CollectionFeature {...props} type="news" />}
               />
               <Route
-                path="/newest/:page?"
+                path={`${""}/newest/:page?`}
                 render={(props) => (
                   <CollectionFeature {...props} type="newest" />
                 )}
               />
               <Route
-                path="/show/:page?"
+                path={`${""}/show/:page?`}
                 render={(props) => <CollectionFeature {...props} type="show" />}
               />
               <Route
-                path="/ask/:page?"
+                path={`${""}/ask/:page?`}
                 render={(props) => <CollectionFeature {...props} type="ask" />}
               />
               <Route
-                path="/jobs/:page?"
+                path={`${""}/jobs/:page?`}
                 render={(props) => <CollectionFeature {...props} type="jobs" />}
               />
               <Route
-                path="/business/:page?"
+                path={`${""}/business/:page?`}
                 render={(props) => (
                   <CollectionFeature {...props} type="business" />
                 )}
               />
-              <Route exact path="/about" component={About} />
+              <Route exact path={`${""}/about`} component={About} />
               <Route component={NoMatch} />
             </Switch>
           </div>

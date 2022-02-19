@@ -31,12 +31,19 @@ export const Story = (props: Props): JSX.Element => {
   useEffect(() => {
     const getCat = async () => {
       try {
-        const cat = await api.getCategoryForIdCached(data.id);
-        //      const cat = await api.getCategory(data.title);
-
+        //const cat = await api.getCategoryForIdCached(data.id);
+        let cat = await api.getCategory(data.title);
+        setCategory(cat);
+        const item = await api.getItem(data.id + "");
+        console.log(item);
+        cat = await api.getCategory(
+          data.title +
+            "\n" +
+            item.comments[0].content.replace(/<[^>]*>?/gm, "").slice(0, 100)
+        );
         setCategory(cat);
       } catch (error) {
-        setCategory("failed");
+        setCategory("-");
       }
     };
     try {

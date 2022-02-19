@@ -4,12 +4,10 @@
 # testing
 /coverage
 
-# production
-/build
-
 # styles
 src/styles.css
-
+#build
+build
 # storybook
 storybook-static
 
