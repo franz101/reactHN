@@ -130,22 +130,27 @@ export const api = {
   getCategory: (text: string) => {
     return new Promise<any>((resolve, reject) => {
       // post request using fetch
-      fetch(`http://127.0.0.1:8000/category`, {
-        method: "POST",
-        mode: "cors",
-        credentials: "omit",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          text: text,
-        }),
-      })
+      fetch(
+        `https://zaepdhugzd.execute-api.eu-central-1.amazonaws.com/default/classification`,
+        {
+          method: "POST",
+          mode: "cors",
+          credentials: "omit",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            texts: [text],
+          }),
+        }
+      )
         .then((res) => res.json())
         .then((data: any) => {
-          console.log(data);
-          resolve(data.category.slice(0, 2).join(", "));
+          const prediction = data.predictions[0];
+          resolve(
+            `${prediction.label} (${(prediction.score * 100).toFixed(2)}%)  `
+          );
         })
         .catch((err) => {
           reject(err);
