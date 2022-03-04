@@ -22,7 +22,7 @@ jobs:
         run: npx semantic-release
 
       - name: Build
-        run: 'yarn deploy'
+        run: 'yarn build'
 
       - name: Deploy to GH Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
