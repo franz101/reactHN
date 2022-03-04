@@ -51,7 +51,7 @@ export const Story = (props: Props): JSX.Element => {
     } catch (error) {
       setCategory("error");
     }
-  }, [data.id]);
+  }, [data.id,data.title]);
 
   return (
     <div className="flex py-4 border-solid border-gray-100 dark:border-b-0 border-b">
