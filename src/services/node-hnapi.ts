@@ -131,7 +131,7 @@ export const api = {
     return new Promise<any>((resolve, reject) => {
       // post request using fetch
       fetch(
-        `https://zaepdhugzd.execute-api.eu-central-1.amazonaws.com/default/classification`,
+        `https://djqzjo0u82.execute-api.us-east-2.amazonaws.com/prod/hn_predictions`,
         {
           method: "POST",
           mode: "cors",
@@ -149,7 +149,7 @@ export const api = {
         .then((data: any) => {
           const prediction = data.predictions[0];
           resolve(
-            `${prediction.label} (${(prediction.score * 100).toFixed(2)}%)  `
+            `${prediction.label} (${(prediction.score * 100).toFixed(0)}%)  `
           );
         })
         .catch((err) => {
