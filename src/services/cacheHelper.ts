@@ -1,6 +1,3 @@
-const fileName = "30256320.csv";
-const exampleText =
-  "53.0,1.36,0.54,79.42,0.53,0.61,1.67,15.87,48.0,0.41,1.65,86.36,1.07,0.3,0.78,9.43,35.0,0.81,0.89,32.08,1.98,0.36,1.14,62.74,34.0,62.52,0.48,0.63,23.72,1.45,6.01,5.19,26.0,0.41,0.34,1.69,5.48,0.2,0.46,91.42";
 
 const categoriesLookup = {
   0: "CULTURE & ARTS",
@@ -44,6 +41,7 @@ const getCategoryPrediction = (index: number, textInput: string) => {
   return result;
 };
 
+/*
 const listProbalitiesForPrediction = (prediction) => {
   const predictionProbalities = {};
   for (let i = 0; i < prediction.length; i++) {
@@ -51,6 +49,8 @@ const listProbalitiesForPrediction = (prediction) => {
   }
   return predictionProbalities;
 };
+*/
+
 
 export const getCategoryForIdCached = async (id: number) => {
   const index = calculateIndex(id);
