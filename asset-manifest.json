@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "https://franz101.github.io/reactHN/static/css/main.ae9558cc.chunk.css",
-    "main.js": "https://franz101.github.io/reactHN/static/js/main.5abbcda9.chunk.js",
-    "main.js.map": "https://franz101.github.io/reactHN/static/js/main.5abbcda9.chunk.js.map",
+    "main.js": "https://franz101.github.io/reactHN/static/js/main.3aba83fc.chunk.js",
+    "main.js.map": "https://franz101.github.io/reactHN/static/js/main.3aba83fc.chunk.js.map",
     "runtime-main.js": "https://franz101.github.io/reactHN/static/js/runtime-main.c3eefa58.js",
     "runtime-main.js.map": "https://franz101.github.io/reactHN/static/js/runtime-main.c3eefa58.js.map",
-    "static/js/2.54ea59d2.chunk.js": "https://franz101.github.io/reactHN/static/js/2.54ea59d2.chunk.js",
-    "static/js/2.54ea59d2.chunk.js.map": "https://franz101.github.io/reactHN/static/js/2.54ea59d2.chunk.js.map",
+    "static/js/2.5c897957.chunk.js": "https://franz101.github.io/reactHN/static/js/2.5c897957.chunk.js",
+    "static/js/2.5c897957.chunk.js.map": "https://franz101.github.io/reactHN/static/js/2.5c897957.chunk.js.map",
     "index.html": "https://franz101.github.io/reactHN/index.html",
-    "precache-manifest.059e7763dda951e461b68175498d65b1.js": "https://franz101.github.io/reactHN/precache-manifest.059e7763dda951e461b68175498d65b1.js",
+    "precache-manifest.961bfb7171eabbee5f9e8cca1c9e56ee.js": "https://franz101.github.io/reactHN/precache-manifest.961bfb7171eabbee5f9e8cca1c9e56ee.js",
     "service-worker.js": "https://franz101.github.io/reactHN/service-worker.js",
     "static/css/main.ae9558cc.chunk.css.map": "https://franz101.github.io/reactHN/static/css/main.ae9558cc.chunk.css.map",
-    "static/js/2.54ea59d2.chunk.js.LICENSE.txt": "https://franz101.github.io/reactHN/static/js/2.54ea59d2.chunk.js.LICENSE.txt"
+    "static/js/2.5c897957.chunk.js.LICENSE.txt": "https://franz101.github.io/reactHN/static/js/2.5c897957.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c3eefa58.js",
-    "static/js/2.54ea59d2.chunk.js",
+    "static/js/2.5c897957.chunk.js",
     "static/css/main.ae9558cc.chunk.css",
-    "static/js/main.5abbcda9.chunk.js"
+    "static/js/main.3aba83fc.chunk.js"
   ]
 }
