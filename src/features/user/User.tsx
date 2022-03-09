@@ -7,7 +7,7 @@ import User from '../../components/User';
 
 export const UserFeature = () => {
     const dispatch = useDispatch();
-    const { id } = useParams();
+    const { id } = useParams<{id:string}>();
     const { user: data } = useSelector((state: RootState) => state);
 
     useEffect(() => {

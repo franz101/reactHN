@@ -2,7 +2,7 @@ import { CollectionType } from "../features/collection/collectionSlice";
 
 const API_URL = "https://node-hnapi.herokuapp.com/";
 const LAMBDA_CLASSIFY_URL =  `https://djqzjo0u82.execute-api.us-east-2.amazonaws.com/prod/hn_predictions`
-const LAMBDA_TOPIC_URL =  `https://mohp3enuma.execute-api.us-east-2.amazonaws.com/topics`
+const LAMBDA_TOPIC_URL =  `https://mohp3enuma.execute-api.us-east-2.amazonaws.com`
 
 export interface Urlable {
   id: number;
@@ -61,6 +61,7 @@ export interface User {
 }
 
 export const api = {
+  updateIndex: ()=>fetch(LAMBDA_TOPIC_URL),
   getCollection: (type: CollectionType, page: string) => {
     return new Promise<Collection>((resolve, reject) => {
       fetch(`${API_URL}${type}?page=${page}`)
@@ -102,7 +103,7 @@ export const api = {
   
     const fetchPage = () =>
       new Promise<Collection>((resolve, reject) => {
-        fetch(`${LAMBDA_TOPIC_URL}/${topic}?page=${page}`)
+        fetch(`${LAMBDA_TOPIC_URL}/topics/${topic}?page=${page}`)
           .then((res) => res.json())
           .then((data) => {
             resolve(data.map(item=>{

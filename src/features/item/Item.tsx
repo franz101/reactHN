@@ -11,7 +11,7 @@ import {
 } from '../../helpers';
 
 export const ItemFeature = () => {
-    const { id } = useParams();
+    const { id } = useParams<{id:string}>();
     const dispatch = useDispatch();
     const { item, isFetching } = useSelector((state: RootState) => state.items);
 
