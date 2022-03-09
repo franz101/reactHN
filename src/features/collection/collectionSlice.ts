@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { AppThunk } from "../../store";
-import { Collection as CollectionModel, api } from "../../services/node-hnapi";
+import { Collection as CollectionModel, api, TopicModel } from "../../services/node-hnapi";
 
 export interface Collections {
   news: CollectionModel;
@@ -9,7 +9,7 @@ export interface Collections {
   ask: CollectionModel;
   jobs: CollectionModel;
   business: CollectionModel;
-}
+ }
 
 export type CollectionType = keyof Collections;
 
@@ -55,7 +55,7 @@ export const getCollectionByCategory = (
 ): AppThunk => async (dispatch) => {
   dispatch(requestList());
   api
-    .getCollectionByCategory(type, page)
+    .getCollectionByCategory(type as TopicModel, page)
     .then((data) => {
       dispatch(receiveList({ type, data }));
     })

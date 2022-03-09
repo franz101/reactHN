@@ -1,16 +1,24 @@
 import { CollectionType } from "../features/collection/collectionSlice";
-import {
-  getCategoryForIdCached,
-  getCategoryIdForIdCached,
-} from "./cacheHelper";
 
 const API_URL = "https://node-hnapi.herokuapp.com/";
+const LAMBDA_CLASSIFY_URL =  `https://djqzjo0u82.execute-api.us-east-2.amazonaws.com/prod/hn_predictions`
+const LAMBDA_TOPIC_URL =  `https://mohp3enuma.execute-api.us-east-2.amazonaws.com/topics`
 
 export interface Urlable {
   id: number;
   user: string;
   time: number;
   time_ago: string;
+}
+
+export enum TopicModel  {
+  BUSINESS="BUSINESS",
+  HEALTH="HEALTH & LIVING",
+  CULTURE="CULTURE & ARTS",
+  EDUCATION="EDUCATION",
+  SPORTS="SPORTS",
+  NEWS="NEWS & POLITICS",
+  TECH="TECH & SCIENCE",
 }
 
 export interface Story extends Urlable {
@@ -24,6 +32,8 @@ export interface Story extends Urlable {
   type: string;
   comments_count: number;
   url: string;
+  label?: string;
+  score?: string;
 }
 
 export type Collection = Story[];
@@ -87,51 +97,35 @@ export const api = {
         });
     });
   },
-  getCollectionByCategory: async (type: CollectionType, page: string) => {
-    if (type !== "business") {
-      return [] as Item[];
-    }
+  getCollectionByCategory: async (topic: TopicModel, page: string) => {
 
-    let currentPage = parseInt(page);
-
-    const fetchPage = (page: number) =>
+  
+    const fetchPage = () =>
       new Promise<Collection>((resolve, reject) => {
-        fetch(`${API_URL}news?page=${page}`)
+        fetch(`${LAMBDA_TOPIC_URL}/${topic}?page=${page}`)
           .then((res) => res.json())
-          .then((data: Item[]) => {
-            resolve(data);
+          .then((data) => {
+            resolve(data.map(item=>{
+              if(item.ID){
+                item.id =item.ID
+              }
+              return item  
+            }) as Item[] );
           })
           .catch((err) => {
             reject(err);
           });
       });
 
-    const businessItems: Collection = [];
-    while (businessItems.length < 10) {
-      const items = await fetchPage(currentPage);
-      for await (const item of items) {
-        try {
-          const cat = await getCategoryIdForIdCached(item.id);
-          if (cat === 2) {
-            businessItems.push(item);
-          } else {
-          }
-        } catch (error) {
-          console.log(item.id, "not found");
-        }
-      }
-      currentPage++;
-    }
-    return businessItems;
+    return fetchPage();
   },
 
-  getCategoryForIdCached,
 
   getCategory: (text: string) => {
     return new Promise<any>((resolve, reject) => {
       // post request using fetch
-      fetch(
-        `https://djqzjo0u82.execute-api.us-east-2.amazonaws.com/prod/hn_predictions`,
+      fetch(LAMBDA_CLASSIFY_URL
+       ,
         {
           method: "POST",
           mode: "cors",

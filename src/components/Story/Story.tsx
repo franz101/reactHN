@@ -32,16 +32,23 @@ export const Story = (props: Props): JSX.Element => {
     const getCat = async () => {
       try {
         //const cat = await api.getCategoryForIdCached(data.id);
+        if(data.label){
+          setCategory(data.label);
+          return
+        }
         let cat = await api.getCategory(data.title);
         setCategory(cat);
-        const item = await api.getItem(data.id + "");
-        console.log(item);
-        cat = await api.getCategory(
-          data.title +
-            "\n" +
-            item.comments[0].content.replace(/<[^>]*>?/gm, "").slice(0, 100)
-        );
-        setCategory(cat);
+        if(data.id){
+
+          const item = await api.getItem(data.id + "");
+          if(item.comments.length > 0) {
+          cat = await api.getCategory(
+            data.title +
+              "\n" +
+              item.comments[0].content.replace(/<[^>]*>?/gm, "").slice(0, 100)
+          );
+          setCategory(cat);}
+        }
       } catch (error) {
         setCategory("-");
       }

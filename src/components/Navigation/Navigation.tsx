@@ -2,7 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { scrollToTop } from "../../helpers";
 
-const links: { dest: string; label: string }[] = [
+const links: { dest: string; label: string }[] = 
+  [{
+    dest: "/topics",
+    label: "topics",
+  },
   {
     dest: "/news",
     label: "top",
@@ -23,10 +27,10 @@ const links: { dest: string; label: string }[] = [
     dest: "/jobs",
     label: "jobs",
   },
-  // {
-  //   dest: "/business",
-  //   label: "business",
-  // },
+  {
+    dest: "/business",
+    label: "business",
+  },
 ];
 
 const navLinkClass =

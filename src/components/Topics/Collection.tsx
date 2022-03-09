@@ -62,13 +62,14 @@ export const Collection = (props: Props) => {
     if (content.length > 0) {
       return (
         <div>
-          {renderList(content, content.length)}
-          <div className="my-4">
+          {renderList(content, 5)}
+          {/* <div className="my-4">
             <Pagination 
               page={pageNumber ? pageNumber : '1'} 
               type={type}
-            />
+            /> 
           </div>
+            */}
         </div>
       );
     }
