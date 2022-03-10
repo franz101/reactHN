@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/franz101/reactHN/compare/v1.3.0...v1.4.0) (2022-03-10)
+
+
+### Features
+
+* update ([e40b0b4](https://github.com/franz101/reactHN/commit/e40b0b47474edd3d04e114cfc0bb6dcd9da1190a))
+
 # [1.3.0](https://github.com/franz101/reactHN/compare/v1.2.0...v1.3.0) (2022-02-19)
 
 
