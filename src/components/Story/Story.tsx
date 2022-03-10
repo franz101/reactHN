@@ -32,8 +32,8 @@ export const Story = (props: Props): JSX.Element => {
     const getCat = async () => {
       try {
         //const cat = await api.getCategoryForIdCached(data.id);
-        if(data.label){
-          setCategory(data.label);
+        if(data.label && data.score){
+          setCategory( ` ${data.label} (${(data.score * 100).toFixed(0)}%)  `);
           return
         }
         let cat = await api.getCategory(data.title);

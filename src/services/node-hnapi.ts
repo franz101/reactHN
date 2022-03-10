@@ -33,7 +33,7 @@ export interface Story extends Urlable {
   comments_count: number;
   url: string;
   label?: string;
-  score?: string;
+  score?: number;
 }
 
 export type Collection = Story[];
@@ -144,7 +144,7 @@ export const api = {
         .then((data: any) => {
           const prediction = data.predictions[0];
           resolve(
-            `${prediction.label} (${(prediction.score * 100).toFixed(0)}%)  `
+            ` ${prediction.label} (${(prediction.score * 100).toFixed(0)}%)  `
           );
         })
         .catch((err) => {

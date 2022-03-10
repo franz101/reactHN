@@ -31,7 +31,6 @@ export const Topics: React.FC = () => {
   
   )
 
-  
 
   return (
     <div className="About">
