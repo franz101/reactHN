@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { setTitle } from '../../helpers';
-import raw from 'raw.macro';
+
 import exampleCollection from './exampleCollection.json';
 import { Collection } from './Collection';
 import { 
