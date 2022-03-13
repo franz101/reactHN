@@ -27,7 +27,7 @@ export const Story = (props: Props): JSX.Element => {
   const position = index + 1 + (Number(page) - 1) * perPage;
   const discussionLabel = discussion(data);
   const [category, setCategory] = useState("loading...");
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const getCat = async (data: StoryModel) => {
       try {
@@ -58,6 +58,7 @@ export const Story = (props: Props): JSX.Element => {
     } catch (error) {
       setCategory("error");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data.id,data.title]);
 
   return (
