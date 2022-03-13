@@ -5,10 +5,9 @@ import exampleCollection from './exampleCollection.json';
 import { Collection } from './Collection';
 import { 
   api,
-  Collection as CollectionModel,
   TopicModel
 } from '../../services/node-hnapi';
-const markdown = raw("../../../README.md");
+
 
 export const Topics: React.FC = () => {
   const [collection, setIsCollection] = useState<{[key:string]:any}>(exampleCollection)
