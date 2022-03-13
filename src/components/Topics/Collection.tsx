@@ -1,7 +1,7 @@
 import React from 'react';
 import Story from '../Story';
 import Loading from '../Loading';
-import Pagination from '../Pagination';
+
 
 import { 
   Story as StoryModel,
@@ -21,7 +21,7 @@ interface Props {
 export const Collection = (props: Props) => {
 
   const {
-    type,
+
     collection,
     isFetching,
     path,
