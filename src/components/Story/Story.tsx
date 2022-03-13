@@ -29,7 +29,7 @@ export const Story = (props: Props): JSX.Element => {
   const [category, setCategory] = useState("loading...");
 
   useEffect(() => {
-    const getCat = async () => {
+    const getCat = async (data: StoryModel) => {
       try {
         //const cat = await api.getCategoryForIdCached(data.id);
         if(data.label && data.score){
@@ -54,7 +54,7 @@ export const Story = (props: Props): JSX.Element => {
       }
     };
     try {
-      getCat();
+      getCat(data);
     } catch (error) {
       setCategory("error");
     }
