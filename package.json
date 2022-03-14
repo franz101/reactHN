@@ -1,6 +1,7 @@
 {
   "name": "react-hn",
   "version": "2.0.0-development",
+  "homepage": "https://n3ws.ploomber.io",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.3.2",
