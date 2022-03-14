@@ -26,11 +26,8 @@ const links: { dest: string; label: string }[] =
   {
     dest: "/jobs",
     label: "jobs",
-  },
-  {
-    dest: "/business",
-    label: "business",
-  },
+  }
+  ,
 ];
 
 const navLinkClass =
