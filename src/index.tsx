@@ -20,7 +20,7 @@ import Topics  from "./components/Topics";
 
 const root: JSX.Element = (
   <Provider store={store}>
-    <Router basename="/">
+    <Router >
       <div>
         <Navigation />
         <main>
