@@ -30,7 +30,7 @@
     "start": "PUBLIC_URL=http://localhost:3000 BROWSER=none react-scripts start",
     "now-start": "serve -s ./build",
     "prebuild": "NODE_ENV=production yarn run build:styles",
-    "build": "PUBLIC_URL=https://franz101.github.io/reactHN react-scripts build",
+    "build": "react-scripts build",
     "build:styles": "postcss src/tailwind.css -o src/styles.css",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
