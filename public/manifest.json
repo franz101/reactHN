@@ -1,6 +1,6 @@
 {
-  "short_name": "React HN",
-  "name": "React Hacker News clone",
+  "short_name": "HN with topics",
+  "name": "news.ycombinator.com with topic filters",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,7 +8,7 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": "./news/1",
+  "start_url": "./topics",
   "display": "standalone",
   "theme_color": "rgb(97, 218, 251)",
   "background_color": "#282c34"
