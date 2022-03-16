@@ -1,10 +1,13 @@
-# React Hacker News
+# Hacker News with topic classification
 
-Yet another React Hacker News clone
+Frontend based on 
+Yet another [React Hacker News clone](https://github.com/ptibbetts/reactHN)
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+Topic classifier and backend written by
+[Franz Krekeler](https://www.linkedin.com/in/franz-krekeler)
 
-**Demo:** [https://ya-react-hn.vercel.app](https://ya-react-hn.vercel.app)
+Learn more about the project in the blogpost
+
 
 Featuring:
 
