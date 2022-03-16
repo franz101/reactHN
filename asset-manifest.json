@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "https://n3ws.ploomber.io/static/css/main.ae9558cc.chunk.css",
-    "main.js": "https://n3ws.ploomber.io/static/js/main.95e738cc.chunk.js",
-    "main.js.map": "https://n3ws.ploomber.io/static/js/main.95e738cc.chunk.js.map",
+    "main.css": "https://n3ws.ploomber.io/static/css/main.5ebd29a5.chunk.css",
+    "main.js": "https://n3ws.ploomber.io/static/js/main.f3cad278.chunk.js",
+    "main.js.map": "https://n3ws.ploomber.io/static/js/main.f3cad278.chunk.js.map",
     "runtime-main.js": "https://n3ws.ploomber.io/static/js/runtime-main.4d405bcf.js",
     "runtime-main.js.map": "https://n3ws.ploomber.io/static/js/runtime-main.4d405bcf.js.map",
     "static/js/2.2489b1da.chunk.js": "https://n3ws.ploomber.io/static/js/2.2489b1da.chunk.js",
     "static/js/2.2489b1da.chunk.js.map": "https://n3ws.ploomber.io/static/js/2.2489b1da.chunk.js.map",
     "index.html": "https://n3ws.ploomber.io/index.html",
-    "precache-manifest.79ecd367e6af9867c28ecbc4d70fb5f9.js": "https://n3ws.ploomber.io/precache-manifest.79ecd367e6af9867c28ecbc4d70fb5f9.js",
+    "precache-manifest.9cce57dae9205eef18c295717d0cabba.js": "https://n3ws.ploomber.io/precache-manifest.9cce57dae9205eef18c295717d0cabba.js",
     "service-worker.js": "https://n3ws.ploomber.io/service-worker.js",
-    "static/css/main.ae9558cc.chunk.css.map": "https://n3ws.ploomber.io/static/css/main.ae9558cc.chunk.css.map",
+    "static/css/main.5ebd29a5.chunk.css.map": "https://n3ws.ploomber.io/static/css/main.5ebd29a5.chunk.css.map",
     "static/js/2.2489b1da.chunk.js.LICENSE.txt": "https://n3ws.ploomber.io/static/js/2.2489b1da.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4d405bcf.js",
     "static/js/2.2489b1da.chunk.js",
-    "static/css/main.ae9558cc.chunk.css",
-    "static/js/main.95e738cc.chunk.js"
+    "static/css/main.5ebd29a5.chunk.css",
+    "static/js/main.f3cad278.chunk.js"
   ]
 }

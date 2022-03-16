@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "242a7b6ea9d1fed3c540d62eca37402a",
+    "revision": "13e042445f7bdf8de4dbec0aa118ff7d",
     "url": "https://n3ws.ploomber.io/index.html"
   },
   {
-    "revision": "692ae380ec8b42f8eb8a",
-    "url": "https://n3ws.ploomber.io/static/css/main.ae9558cc.chunk.css"
+    "revision": "654299eca04dfeb8f2ab",
+    "url": "https://n3ws.ploomber.io/static/css/main.5ebd29a5.chunk.css"
   },
   {
     "revision": "84586c9e12a41ffb2f0c",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://n3ws.ploomber.io/static/js/2.2489b1da.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "692ae380ec8b42f8eb8a",
-    "url": "https://n3ws.ploomber.io/static/js/main.95e738cc.chunk.js"
+    "revision": "654299eca04dfeb8f2ab",
+    "url": "https://n3ws.ploomber.io/static/js/main.f3cad278.chunk.js"
   },
   {
     "revision": "60e3bd4e10be908821e6",
